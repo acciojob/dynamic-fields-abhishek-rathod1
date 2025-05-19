@@ -27,7 +27,11 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("data: ", fields);
+    let data = [];
+    for(let field of fields){
+      data.push({name:field.name, age:field.age});
+    }
+    console.log(data);
     //for
   };
 
