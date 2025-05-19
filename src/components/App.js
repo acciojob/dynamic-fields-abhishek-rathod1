@@ -36,7 +36,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div id="main">
       <div id="inputField">
         {fields.map((field) => (
           <Field
